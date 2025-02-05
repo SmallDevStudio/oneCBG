@@ -1,12 +1,13 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import Header from '../../components/Header';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { StatusBar } from 'expo-status-bar';
 
 
 const Home = () => {
   return (
-    <View className="flex-1 bg-[#f5f5f5]">
+    <View className="flex-1 bg-[#f5f5f5] font-prompt">
+      <StatusBar style="light" />
       <Header />
       <Text>Home</Text>
     </View>
